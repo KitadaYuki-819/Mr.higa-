@@ -1,0 +1,58 @@
+// .sub-ttl{
+//   // text-align:right;
+//   font-weight:700;
+//   position: relative;
+//   font-size: rem(24);
+//   line-height: 1.5;
+//   @include mq("sm") {
+//     font-size: rem(32);
+//     line-height: rem(48);
+//     letter-spacing:5px;
+ 
+//   }
+// }
+
+// .sub-ttl::before{
+//   content:"";
+//   position: absolute;
+//   height:1px;
+//   // right:rem(405);
+//   background-color: #333;
+//   bottom:0;
+//   width:200px;
+//   @include mq("sm") {
+//     top:50%;
+//     width:240px;
+//     bottom:auto;
+ 
+//   }
+// }
+.sub-ttl{
+  // text-align:right;
+  font-weight:700;
+  position: relative;
+  font-size: rem(24);
+  line-height: 1.5;
+  @include mq("md") {
+    font-size: rem(32);
+    line-height: rem(48);
+    letter-spacing:5px;
+ 
+  }
+}
+
+.sub-ttl::before{
+  content:"";
+  position: absolute;
+  height:1px;
+  // right:rem(405);
+  background-color: #333;
+  bottom:0;
+  width:170px;
+  @include mq("md") {
+    top:50%;
+    width:240px;
+    bottom:auto;
+ 
+  }
+}

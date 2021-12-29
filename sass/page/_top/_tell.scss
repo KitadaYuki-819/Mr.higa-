@@ -1,0 +1,153 @@
+.tell{
+  background-image: url(..//images/common/child.png);
+  background-position:top right 60%;
+  background-size:cover;
+  // padding-top: rem(80);
+  padding-top:rem(300);
+  padding-bottom: rem(20);
+ 
+  
+  position:relative;
+  @include mq("md") {
+    background: url(..//images/common/child.png) center center / cover;
+    padding-top: rem(80);
+    padding-bottom: rem(46);
+ 
+  }
+}
+
+.tell::after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.tell_margin{
+  margin-top: rem(200);
+}
+.tell-inner{
+  max-width:rem(1200);
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:rem(56);
+  padding-right: rem(22);
+  
+}
+
+.tell__message{
+  font-weight: 500;
+  font-size: rem(24);
+  line-height: 1.5;
+  color:#fff;
+  position:sticky;
+  z-index:1;
+
+  writing-mode: vertical-rl;
+  
+  @include mq("md") {
+    letter-spacing: 10px;
+    font-size: rem(36);
+    line-height: 1.75;
+  }
+
+  br:nth-child(1){
+    display:none;
+    @include mq("md") {
+      display:block;
+    }
+  }
+  br:nth-child(3){
+    display:none;
+    @include mq("md") {
+      display:block;
+    }
+  }
+
+  
+}
+
+.tell__btn{
+  // text-align:center;
+  background-color: #FFED66;
+  // display:inline-block;
+  // margin-left:auto;
+  border-radius: 50px;
+  padding-top: rem(18);
+  padding-bottom: rem(16);
+  // text-align:center;
+  position:sticky;
+  width:rem(250);
+  z-index:1;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: rem(30);
+  @include mq("md") {
+    margin-top:rem(57) ;
+    margin-left:auto;
+    width:rem(400);
+    margin-right: 0;
+  }
+}
+
+.tell__btn a{
+  display:flex;
+  align-items:center;
+  // text-align:right;
+  // margin-left:auto;
+  justify-content: center;
+  
+
+}
+.tell-btn__img{
+  width:rem(30);
+  height:rem(30);
+  @include mq("md") {
+    width:rem(40);
+    height:rem(40);
+ 
+  }
+}
+
+.tell-btn__img img{
+  width:100%;
+  height:100%;
+}
+
+.tell-btn__text{
+
+  @include mq("md") {
+    margin-left:rem(16);
+ 
+  }
+}
+
+.tell-now__text{
+  font-weight: 700;
+  font-size: rem(14);
+  line-height: 1.25;
+
+  
+  @include mq("md") {
+    font-size: rem(18);
+    line-height: 1.5;
+    letter-spacing: 10%;
+  
+ 
+  }
+}
+.tell-now__number{
+  line-height: 1.25;
+  letter-spacing: 10%;
+  font-weight: 500;
+  font-size: rem(20);
+  @include mq("md") {
+    font-size: rem(24);
+ 
+  }
+}
+

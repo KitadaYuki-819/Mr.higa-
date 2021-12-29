@@ -1,0 +1,277 @@
+
+
+
+
+
+
+
+.sec_inner{
+  position:relative;
+  background-color: #FFFAF0;
+}
+
+.slider{
+  position:relative;
+
+}
+/*--------画像サイズ調整---------*/
+img{
+	width:100%;
+}
+
+/*-----------height調整----------*/
+.slick-slide{
+	height:auto!important;
+}
+/*------------------------------*/
+
+
+
+/*-------横幅の間隔をとる-------*/
+.slick-slide{
+  margin-right: 1vw!important;
+  margin-left: 1vw!important;
+}
+/*------------------------------*/
+
+.slick-slide img{
+  height:559px !important;
+  overflow:hidden;
+  border-radius:20px;
+}
+//clickabl 実装
+.slick-dots{
+  display:none !important;
+}
+
+
+
+
+
+/////mv部分
+.mv{
+  background-color: #FFFAF0;
+}
+
+
+.mv-top{
+
+}
+
+.mv-inner{
+  max-width:rem(1000);
+  width:100%;
+  margin:0 auto;
+  position: relative;
+}
+
+.mv-top__img{
+  width:inherit;
+  height:inherit;
+}
+
+.mv-top__img{
+  width:100%;
+  height:100%;
+}
+.mv-top__texts{
+  display:flex;
+  // position:relative;
+}
+.mv-texts__text{
+  // position:absolute;
+  // right:0;
+  background-color: #fde7bd;
+  padding:rem(20) rem(12);
+  font-size: rem(32);
+  line-height:1.5 ;
+  font-weight: 700;
+  // -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  position:absolute;
+}
+
+.mv-top__text01{
+  bottom:-72px;
+  right:rem(400);
+}
+.mv-top__text02{
+  right:rem(300);
+  bottom:-12.1px;
+}
+
+
+
+
+
+
+.host{
+  position:relative;
+  padding-top: rem(80);
+  padding-bottom: rem(100);
+  padding-left:rem(20);
+  padding-right: rem(20);
+  @include mq("md") {
+    padding-top: rem(112);
+    padding-bottom: rem(140);
+  }
+}
+
+.host__light{
+  text-align:center;
+  width:rem(112);
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.host-leaf{
+  position:absolute;
+  width:rem(40);
+  height:rem(53);
+}
+
+.host__leaf01{
+  left:rem(45);
+  top:rem(100);
+  @include mq("md") {
+    top:rem(207);
+ 
+  }
+}
+.host__leaf02{
+  left:rem(260);
+  top:rem(37);
+
+}
+.host__leaf03{
+  left:rem(220);
+  top:-13%;
+}
+.host-leaf img{
+  width:100%;
+  height:100%;
+}
+
+.host-inner{
+  max-width: rem(800);
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: rem(22);
+  width:100%;
+  background:url(../images/common/yellow-house.png) center center / cover;
+  // height:rem(227);
+  height:auto;
+  padding-top: rem(38);
+  padding-bottom: rem(14);
+  padding-left:rem(20);
+  padding-right: rem(20);
+}
+
+.host__ttl{
+   text-align:center;
+   font-size: rem(30);
+   font-family:YuGothic;
+   @include mq("md") {
+     font-size: rem(36);
+ 
+  }
+}
+
+.host-body{
+  justify-content: center;
+  margin-top: rem(18);
+  // margin-top: rem(32);
+  @include mq("md") {
+    display:flex;
+    align-items:center;
+    flex-direction:row-reverse;
+    
+  }
+}
+
+.host-body__btn {
+  // transform:translateY(-10px);
+  text-align: center;
+  margin-top: rem(20);
+  @include mq("md") {
+    margin-right: rem(32);
+    text-align: start;
+    margin-top: 0;
+  }
+}
+.host-body__btn a{
+  letter-spacing:0.05;
+  border: 1px solid #333;
+  padding:10px 70px 10px 35px;
+  box-sizing: border-box;
+  position:relative;
+
+}
+
+.host-body__btn a::before{
+  content:"";
+  position:absolute
+}
+
+.host-body__btn a::after{
+  content:"";
+  position: absolute;
+  display: inline-block;
+  top:50%;
+  right:10px;
+  height: 5px;
+  border: none;
+  width:40px;
+  border-right: 2px solid #111;
+  border-bottom: 1px solid #111;
+  transform: skew(70deg);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.host-body__btn a:hover::after{
+  right:5px;
+}
+
+.host-span{
+  text-align: center;
+
+
+}
+
+.host-span__date{
+  font-size: rem(64);
+  font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  @include mq("md") {
+    justify-content: flex-start;
+  }
+  .normal-size{
+    font-size: rem(48);
+    display:block;
+  }
+
+  .small-size{
+    font-size: rem(16);
+    display: block;
+    transform: translateY(50px);
+  }
+    
+}
+
+.host-span__time{
+  color:#fff;
+  background-color: #C4C4C4;
+  font-weight: bold;
+  // padding:rem(3) rem(30);
+  width:50%;
+  border-radius:60px;
+  display:inline-block;
+  text-align: center;
+  @include mq("md") {
+    padding:3px 49px 4px 61px;
+    width:auto;
+  }
+}

@@ -1,0 +1,40 @@
+.share-btn{
+
+}
+.share-btn a{
+  border:1.5px solid #111;
+  font-size: rem(18);
+  // letter-spacing: 10px;
+  padding:18px 100px 18px 50px;
+  // padding:18px 100px 18px 30px;
+  font-family:YuMincho;
+  position:relative;
+  border-radius:10px;
+}
+
+.share-btn a::after{
+  content:"";
+  position: absolute;
+  display: inline-block;
+  top:50%;
+  // right:10px;
+  right:29px;
+  // right:20px;
+  height: 5px;
+  border: none;
+  // width:40px;
+  width:60px;
+  border-right: 2px solid #111;
+  border-bottom: 1px solid #111;
+  transform: skew(70deg);
+  -webkit-transition: .3s;
+  transition: .5s;
+}
+
+.share-btn a:hover::after{
+  right:10px;
+}
+
+
+
+
